@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity 
+{
     CheckBox cb1,cb2;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) 
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -20,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         cb2.setOnClickListener();
     }
 
-    public void onClick(View view) {
+    public void onClick(View view)
+    {
         if(view.getId()==R.id.cb1){
             if(cb1.isChecked())
                 display(CheckBox 1 secildi);
@@ -28,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 display("CheckBox 1 seçilmedi");
         }
     }
-    public void display(String msg){
+    public void display(String msg)
+    {
         Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
     }
 }
