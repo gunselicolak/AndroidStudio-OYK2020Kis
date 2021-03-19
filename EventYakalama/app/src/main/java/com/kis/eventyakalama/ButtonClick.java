@@ -13,14 +13,6 @@ public class ButtonClick implements View.OnClickListener {
         this.context = context;
     }
     
-    
-    
-    
-    
-    
-    
-    
-
     @Override
     public void onClick(View v) {
         Toast.makeText(context,msg, Toast.LENGTH_LONG).show();
